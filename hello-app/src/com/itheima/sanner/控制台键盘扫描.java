@@ -1,8 +1,6 @@
 package com.itheima.sanner;
 //1、导包操作（并不需要自己写的，以后通过工具进行导入更方便）
 
-import com.sun.org.apache.bcel.internal.generic.SWITCH;
-
 import java.util.Scanner;
 
 public class 控制台键盘扫描 {
