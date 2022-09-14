@@ -23,7 +23,7 @@ public class 字节类型 {
         long lg =100000000;//长整形
 //        long lg2 =100000000000;  报错：随便写一个整数字面量是int类型，虽然没有超过long的范围，但是超过了本身int类型
 //      如果需要写一个整数字面量当成long类型，需要在数字后面加L/l
-        long lg2 =100000000000000l;
+        long lg2 =100000000000000L;
         System.out.println(lg);
         System.out.println(lg2);
 //        浮点数：
