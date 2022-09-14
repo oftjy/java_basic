@@ -22,5 +22,9 @@ public class stringType {
         char[] chars = {'a', 'b', '1', '中', '国'};
         String s3 = new String(chars);
         System.out.println(s3);
+//        5、public String(byte [] b)根据字节数组的内容，来创建字符串对象
+        byte[] bytes = {97, 98, 99, 65, 67};
+        String s4 = new String(bytes);//将字节中的整数全部转换成单词字符串输出
+        System.out.println(s4);
     }
 }
