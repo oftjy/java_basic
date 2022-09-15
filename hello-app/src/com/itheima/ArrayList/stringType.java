@@ -26,5 +26,28 @@ public class stringType {
         byte[] bytes = {97, 98, 99, 65, 67};
         String s4 = new String(bytes);//将字节中的整数全部转换成单词字符串输出
         System.out.println(s4);
+
+//        两种创建字符串的方法的区别：
+//        以“”方式给出的字符串对象，在字符串常量池中存储，而且相同内容只会在其中存储一份
+//        提供构造器new 对象，每new一个对象，放在堆内存中
+//
+        System.out.println("----------------------------");
+        String ss1 ="abc";
+        String ss2 ="abc";
+        System.out.println(ss1==ss2);
+        System.out.println("----------------------------");
+        char [] chars1 ={'a','b','c','d'};
+        String ss3 =new String(chars1);
+        String ss4 =new String(chars1);
+        System.out.println(ss3==ss4);
+        System.out.println("面试题1----------------------");
+        String aaa="abc";
+        String bbb="ab";
+        String ccc=bbb+"c";//变量的会放在堆内存，不指向同一个地址
+        System.out.println(aaa==ccc);
+        System.out.println("面试题2----------------------");
+        String aa="abc";
+        String bb="a"+"b"+"c";//Java内部存在编译优化机制，程序在编译时：“a"+"b"+"c"会直接转成”abc“
+        System.out.println(aa==bb);
     }
 }
