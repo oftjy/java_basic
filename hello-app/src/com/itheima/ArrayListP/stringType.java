@@ -1,4 +1,4 @@
-package com.itheima.ArrayList;
+package com.itheima.ArrayListP;
 
 public class stringType {
     public static void main(String[] args) {
